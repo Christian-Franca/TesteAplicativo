@@ -1,0 +1,80 @@
+<style>
+  :root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+</style>
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Sintomas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Está com febre <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="FS">Sim</ion-select-option>
+          <ion-select-option value="FN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Está tossindo? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="TS">Sim</ion-select-option>
+          <ion-select-option value="TN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Está com corisa? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="CS">Sim</ion-select-option>
+          <ion-select-option value="CN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Está com dor de garganta? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="DGS">Sim</ion-select-option>
+          <ion-select-option value="DGN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Está com dificuldade para respirar? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="DRS">Sim</ion-select-option>
+          <ion-select-option value="DRN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Ausência de paladar? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="APS">Sim</ion-select-option>
+          <ion-select-option value="APN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Ausência de olfato? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="AFS">Sim</ion-select-option>
+          <ion-select-option value="AFN">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Possui alguma doença crônica?</ion-label>
+        <ion-input required type="text"></ion-input>
+      </ion-item>
+      
+
+    </ion-list>
+  </ion-content>
+</ion-app>

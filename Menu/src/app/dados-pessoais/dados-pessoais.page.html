@@ -1,0 +1,57 @@
+<style>
+  :root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+</style>
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Dados Pessoais</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Idade? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="Jovem">Até 16 anos</ion-select-option>
+          <ion-select-option value="Jovem adulto">17 anos - 27 anos</ion-select-option>
+          <ion-select-option value="Adulto">28 anos - 59 anos</ion-select-option>
+          <ion-select-option value="Idoso">A partir de 60 anos</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Renda familiar? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="Classe E">Até R$1.254</ion-select-option>
+          <ion-select-option value="Classe D">R$1.255 - R$2.004</ion-select-option>
+          <ion-select-option value="Classe C">R$2.005 - R$8.640</ion-select-option>
+          <ion-select-option value="Classe B">R$8.641 - R$11.261</ion-select-option>
+          <ion-select-option value="Classe A">A partir de 11.262 reais</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Qual o seu sexo? <ion-text color="danger">*</ion-text></ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="Masc">Masculino</ion-select-option>
+          <ion-select-option value="Fem">Feminino</ion-select-option>
+          <ion-select-option value="IDK">Prefiro não informar</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Para fins de feedback</ion-label>
+        <ion-card-subtitle position="stacked" size="small">(Email ou Whatsapp)</ion-card-subtitle>
+        <ion-input required type="text"></ion-input>
+      </ion-item>
+
+      <section>
+        <ion-button expand="block" color="#18FFFF"  href="sintomas">Próximo</ion-button>
+      </section>
+    </ion-list>
+  </ion-content>
+</ion-app>
